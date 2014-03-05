@@ -1,0 +1,30 @@
+css1: |
+  ul {
+    list-style: disc;
+    padding-left: 2em;
+  }
+
+  ul ul {
+    list-style: circle;
+  }
+
+  ul ul ul {
+    list-style: square;
+  }
+
+css2: |
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1em;
+  }
+
+  ul ul {
+    padding-left: 2em;
+    margin-top: .5em;
+  }
+
+  ul > li {
+    padding-left: .75em;
+    border-left: 1px dotted #2b2b2b;
+  }

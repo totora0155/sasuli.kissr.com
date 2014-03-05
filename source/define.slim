@@ -1,0 +1,37 @@
+---
+title: Define - Sasuli
+preword: dl要素の
+cssfile: dl
+---
+
+#content ng-controller="CodeCtrl"
+  ul.snippet
+    li.snippet-li
+      .snippet-view
+        dl
+          dt.dt1= lorem.word
+          dd.dd1= lorem.words 3
+          dt.dt1= lorem.word
+          dd.dd1= lorem.words 3
+
+      == partial(:code, :locals => {data: data.dl.css1})
+
+    li.snippet-li
+      .snippet-view
+        dl
+          dt.dt2= lorem.word
+          dd.dd2= lorem.words 3
+          dt.dt2= lorem.word
+          dd.dd2= lorem.words 3
+
+      == partial(:code, :locals => {data: data.dl.css2})
+
+    li.snippet-li
+      .snippet-view
+        dl
+          dt.dt3= lorem.word
+          dd.dd3= lorem.words 3
+          dt.dt3= lorem.word
+          dd.dd3= lorem.words 3
+
+      == partial(:code, :locals => {data: data.dl.css3})

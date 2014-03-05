@@ -1,0 +1,14 @@
+$base     : lighten(desaturate(#fbfaf5, 15), 2)
+$sub      : #fbfaf5
+$accent   : #e0ebaf
+
+$gray: mix(lighten($black, 80), $sub, 55)
+$gray-font: lighten($black, 70)
+$hv-accent-bg: #F0F3D8
+
+$c-empty: adjust-color($accent, $hue: 10deg, $saturation: -18%, $lightness: -10%)
+$c-aside: mix($black, $accent, 35)
+$c-prop: adjust-color($accent, $hue: 30deg, $saturation: -15%, $lightness: -15%)
+$c-val: triad($c-prop, 2)
+$c-selector: triad($c-prop, 1)
+$c-come: grayscale($c-prop)

@@ -1,0 +1,15 @@
+---
+title: Search - Sasuli
+preword: 検索フォームの
+cssfile: search
+---
+
+#content ng-controller="CodeCtrl"
+  ul.snippet
+    li.snippet-li
+      .snippet-view
+        form.search1
+          input.search1-search type="text"
+          input.search1-submit type="submit"
+
+      == partial(:code, :locals => {data: data.search.css1})

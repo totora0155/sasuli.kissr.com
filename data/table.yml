@@ -1,0 +1,241 @@
+css1: |
+  table {
+    background: #fff;
+    border-collapse: collapse;
+  }
+
+  tr:first-child {
+    background: #fafafa;
+  }
+
+  th, td {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+  }
+
+  td:empty {
+    background: #ddd;
+  }
+
+css2: |
+  table {
+    background: #f8f8f8;
+    border-collapse: collapse;
+  }
+
+  tr:first-child [hateblo]th[/] {
+    color: #fff;
+    background: #2b2b2b;
+  }
+
+  tr:nth-child(2n) {
+    background: #fff;
+  }
+
+
+  tr:nth-child(n+2){
+    border-bottom: 1px solid #2b2b2b;
+  }
+
+  [hateblo]table[/] th, [hateblo]table[/] td {
+    padding: 5px 10px;
+    border: none; [hateblo]
+  }
+
+css3: |
+  table {
+    background: #fff;
+    border-collapse: collapse;
+  }
+
+  tr:first-child {
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:first-child th {
+    background: none; [hateblo]
+    border-width: 1px 1px 0 1px;
+  }
+
+  tr:nth-child(n+2) {
+    border-bottom: 1px dashed #ddd;
+  }
+
+  tr:nth-child(n+2) td {
+    border-width: 0 1px;
+  }
+
+  tr:last-child td {
+    border-width: 0 1px 1px 1px;
+  }
+
+  th, td {
+    padding: 5px 10px;
+    border-style: solid;
+    border-color: #ddd;
+  }
+
+  td:empty {
+    background: #fafafa;
+  }
+
+css4: |
+  table {
+    background: #fff;
+    border-collapse: separate;
+    border-spacing: 2px;
+  }
+
+  tr:first-child th {
+    background: none; [hateblo]
+    border-width: 1px 1px 0 1px;
+  }
+
+  tr:nth-child(n+2) td {
+    border-width: 0 1px;
+  }
+
+  tr:last-child td {
+    border-width: 0 1px 1px 1px;
+  }
+
+  th, td {
+    padding: 5px 10px;
+    border-style: solid;
+    border-color: #808080;
+  }
+
+css5: |
+  table {
+    border-collapse: separate;
+    border-spacing: 8px;
+  }
+
+  tr:first-child {
+    color: #fff;
+    text-align: center;
+  }
+
+  tr:first-child th {
+    background: #2b2b2b;
+    padding: 10px;
+    border-radius: 50%;
+    border: none; [hateblo]
+  }
+
+  tr:nth-child(n+2) td {
+    padding: 5px 10px;
+    border: none; [hateblo]
+  }
+
+  tr:nth-child(2) td {
+    border-top: 3px double #2b2b2b;
+  }
+
+css6: |
+  table {
+    background: #fff;
+    padding: 1em;
+    border: 1px solid #2b2b2b;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  [hateblo]table[/] th, [hateblo]table[/] td {
+    padding: 5px 10px;
+    border: none; [hateblo]
+  }
+
+  tr:first-child th {
+    background: none; [hateblo]
+    border-bottom: 1px solid #2b2b2b;
+  }
+
+css7: |
+  // using Fontastic (http://fontastic.me/)
+  @font-face {
+    font-family: "sasuli";
+    src:url("https://db.tt/QAajQP9A");
+    src:url("https://db.tt/QAajQP9A?#iefix") format("embedded-opentype"), url("https://db.tt/OR7zOFaW") format("woff"), url("https://db.tt/6J81OogC") format("truetype"), url("https://db.tt/nFigcGpw#sasuli") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 5px solid #2b2b2b;
+  }
+
+  table:before {
+    font-family: "sasuli";
+    content: "c"
+    display: table-cell;
+    font-size: 1.5em;
+    color: #fff;
+    background: #2b2b2b;
+    width: 3em;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  tbody {
+    display: table-cell;
+    position: relative;
+  }
+
+  tbody:before {
+    content: ''
+    display: block;
+    height: 1px;
+    width: 96%;
+    border-bottom: 1px solid #2b2b2b;
+    position: absolute;
+    top: 2.3em;
+    left: 2%;
+  }
+
+  [hateblo]table[/] th, [hateblo]table[/] td {
+    background: #fff;
+    border: none;
+  }
+
+css8: |
+  // using Fontastic (http://fontastic.me/)
+  @font-face {
+    font-family: "sasuli";
+    src:url("https://db.tt/QAajQP9A");
+    src:url("https://db.tt/QAajQP9A?#iefix") format("embedded-opentype"), url("https://db.tt/OR7zOFaW") format("woff"), url("https://db.tt/6J81OogC") format("truetype"), url("https://db.tt/nFigcGpw#sasuli") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 5px solid #2b2b2b;
+  }
+
+  table:before {
+    font-family: "sasuli";
+    content: "c"
+    display: table-caption;
+    font-size: 1.5em;
+    color: #fff;
+    background: #2b2b2b;
+    width: 100%;
+    text-align: center;
+    padding: .75em 0;
+  }
+
+  tbody {
+    display: table-cell;
+    position: relative;
+  }
+
+  tr:first-child {
+    border-bottom: 1px dashed #2b2b2b;
+  }
+
+  [hateblo]table[/] th, [hateblo]table[/] td {
+    background: #fff;
+    border: none;
+  }

@@ -1,0 +1,33 @@
+---
+title: Pre - Sasuli
+preword: pre要素の
+cssfile: pre
+---
+
+#content ng-controller="CodeCtrl"
+  ul.snippet
+    li.snippet-li
+      .snippet-view
+        pre.pre1.pre-init
+          | .xxx {
+          br
+          |      height: 99em;
+          br
+          |      width: 99em;
+          br
+          |  }
+
+      == partial(:code, :locals => {data: data.pre.css1})
+
+    li.snippet-li
+      .snippet-view
+        pre.pre2.pre-init.icon-code
+          | .xxx {
+          br
+          |      height: 99em;
+          br
+          |      width: 99em;
+          br
+          |  }
+
+      == partial(:code, :locals => {data: data.pre.css2})

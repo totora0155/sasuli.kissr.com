@@ -1,0 +1,112 @@
+---
+top: true
+title: Home - Sasuli
+---
+
+/ #content ng-controller="TopCtrl"
+#content
+  .select
+    ul.select-ul
+      li.select-li ng-click="select('none')" ng-class="{'select-ed': services['none']}"
+        == image_tag 'img/none.png', width: 50
+        span.select-l なし
+      li.select-li ng-click="select('hateblo')" ng-class="{'select-ed': services['hateblo']}"
+        == image_tag 'img/hateblo.png', width: 50
+        span.select-l はてなブログ
+
+  aside#l-main.l
+    .l-list List
+    .l-define Define
+    .l-table Table
+    .l-pre Pre
+
+  #model.model
+    .model-title.mock.model-invalid ■■■■■
+    .model-main
+      .block.model-wrap-invalid.model-hl.model-invalid ■■■■■■■
+      .block.model-wrap-invalid.model-tag.model-invalid ■　■■
+
+      a.model-wrap.model-a-main href="/list/{{selected == 'none' ? '' : '?s=' + selected}}"
+        ul.nomg
+          li.block ■■■■■■■■■■
+          li.block ■■■■■■■■■■■■■■■
+
+      .block.model-wrap-invalid.model-invalid ■■■■■■　■■■■■　■■　■■■■
+
+      a.model-wrap.model-a-main href="/define/{{selected == 'none' ? '' : '?s=' + selected}}"
+        / a.model-wrap.model-a-main href="/define"
+        dl.mgn
+          dt.block.model-dt ■■■■■■■■■■
+          dd.block ■■■■■■■■■■
+          dt.block.model-dt ■■■■■■■■■■
+          dd.block ■■■■■■■■■■■■■■■
+
+      .block.model-wrap-invalid.model-invalid
+        | ■■■　■■　■■■■　■■■■■■■　■■■■
+        br
+        | ■■■　■■■　■■■■■■■■■■　■■■■■■■■■■
+        | ■■■■■　■■■■■■■■■■■■■■■■■■■■■■
+
+      a.model-wrap.model-a-main href="/table/{{selected == 'none' ? '' : '?s=' + selected}}"
+        table
+          tbody
+            tr
+              - 3.times do
+                th.block.model-troom ■■■
+            tr
+              - 3.times do
+                td.block.model-troom ■■■
+            tr
+              - 3.times do
+                td.block.model-troom ■■■
+
+      .block.model-wrap-invalid.model-invalid ■■■　■■■■■■■■■■■■■　■■
+
+      a.model-wrap.model-a-main href="/pre/{{selected == 'none' ? '' : '?s=' + selected}}"
+        .block.model-pre
+          span <　■■■■■　■■■　>
+          br
+          span 　　　　■■■■■■■■■■■■■
+          br
+          span <　/　■■■■■　>
+
+    .model-side
+
+      a.model-wrap.model-a-main href="/search/{{selected == 'none' ? '' : '?s=' + selected}}"
+        .block
+          | |　■■■　　　　　　　　　　　　　　|　　
+          span.icon-search.model-search
+
+      .block.model-wrap-invalid.model-invalid
+        .block.model-img
+          | ■■■■■
+          br
+          | ■■■■■
+          br
+          | ■■■■■
+          br
+          | ■■■■■
+          br
+          | ■■■■■
+        span ■■■
+        br
+        span ■■■■■
+
+      .block.model-wrap-invalid.model-invalid ■■■■■
+
+      .block.model-wrap-invalid.model-invalid
+        ul.pdn.mgn.lsn
+          li.block.model-side-li ■■■■■■■■
+          li.block.model-side-li ■■■■■
+          li.block.model-side-li ■■■■■■■■■■■■■
+
+      .block.model-wrap-invalid.model-invalid ■■■■■
+
+      .block.model-wrap-invalid.model-invalid
+        ul.pdn.mgn.lsn
+          li.block.model-side-li ■■■■■■■■
+          li.block.model-side-li ■■■■■
+          li.block.model-side-li ■■■■■■■■■■■■■
+
+  aside#l-side.l
+    .l-search Search

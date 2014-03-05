@@ -1,0 +1,14 @@
+header.wrap-header role="banner"
+  #header
+    h1.title
+      / # == link_to 'Sasuli', 'index.html'
+      a.title-a href="/{{selected == '' ? '' : '?s=' + selected}}" Sasuli
+      - unless full_path == 'index.html'
+        == breadcrumb full_path
+    ul.h-ul
+      li.h-li: a href="http://middlemanapp.com/" target="_blank"
+        == image_tag 'img/middleman.png', width: 30
+        span.h-img-tag use
+      li.h-li: a href="https://github.com/totora0155/sasuli.kissr.com" target="_blank"
+        == image_tag 'img/github.png', width: 30
+        span.h-img-tag src

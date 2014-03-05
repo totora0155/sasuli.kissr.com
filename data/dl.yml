@@ -1,0 +1,40 @@
+css1: |
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 2em;
+  }
+
+css2: |
+  dt {
+    clear: left;
+    float: left;
+  }
+
+  dt:after {
+    content: ' :';
+    white-space: pre;
+  }
+
+  dd {
+    float: left;
+    margin-left: 1em;
+  }
+
+css3: |
+  dt, dd {
+    padding-left: .55em;
+    border-width: 0 0 0 2px;
+    border-style: solid;
+  }
+
+  dt {
+    border-color: #2b2b2b;
+  }
+
+  dd {
+    border-color: #e0ebaf;
+    margin: 0;
+  }

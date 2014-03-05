@@ -1,0 +1,39 @@
+---
+title: List - Sasuli
+preword: ul・ol要素の
+cssfile: list
+---
+
+#content ng-controller="CodeCtrl"
+  ul.snippet
+    li.snippet-li
+      .snippet-view
+        ul.ul1.ul1-1
+          li= lorem.words 3
+          li
+            | #{lorem.words 3}
+            ul.ul1.ul1-2
+              li= lorem.words 3
+              li
+                | #{lorem.words 3}
+                ul.ul1.ul1-3
+                  li= lorem.words 3
+                  li= lorem.words 3
+
+      == partial(:code, :locals => {data: data.list.css1})
+
+    li.snippet-li
+      .snippet-view
+        ul.ul2
+          li.li2.li2-1= lorem.words 3
+          li.li2.li2-1
+            | #{lorem.words 3}
+            ul.ul2
+              li.li2.li2-2= lorem.words 3
+              li.li2.li2-2
+                | #{lorem.words 3}
+                ul.ul2
+                  li.li2.li2-3= lorem.words 3
+                  li.li2.li2-3= lorem.words 3
+
+      == partial(:code, :locals => {data: data.list.css2})

@@ -1,0 +1,216 @@
+---
+title: Table - Sasuli
+preword: table要素の
+cssfile: table
+---
+
+#content ng-controller="CodeCtrl"
+  ul.snippet
+    li.snippet-li
+      .snippet-view
+        table.table1
+          tbody
+            tr.table1-th
+              th.table1-item= lorem.words 2
+              th.table1-item= lorem.words 2
+              th.table1-item= lorem.words 2
+            tr
+              td.table1-item= lorem.words 2
+              td.table1-item= lorem.words 2
+              td.table1-item= lorem.words 2
+            tr
+              td.table1-item= lorem.words 2
+              td.table1-item= lorem.words 2
+              td.table1-item
+
+      == partial(:code, :locals => {data: data.table.css1})
+
+    li.snippet-li
+      .snippet-view
+        table.table2
+          tbody
+            tr.table2-th
+              th.table2-item= lorem.words 2
+              th.table2-item= lorem.words 2
+              th.table2-item= lorem.words 2
+            tr.table2-trd
+              td.table2-item= lorem.words 2
+              td.table2-item= lorem.words 2
+              td.table2-item= lorem.words 2
+            tr.table2-trd
+              td.table2-item= lorem.words 2
+              td.table2-item= lorem.words 2
+              td.table2-item= lorem.words 2
+            tr.table2-trd
+              td.table2-item= lorem.words 2
+              td.table2-item= lorem.words 2
+              td.table2-item= lorem.words 2
+            tr.table2-trd
+              td.table2-item= lorem.words 2
+              td.table2-item= lorem.words 2
+              td.table2-item= lorem.words 2
+
+      == partial(:code, :locals => {data: data.table.css2})
+
+    li.snippet-li
+      .snippet-view
+        table.table3
+          tbody
+            tr.table3-th
+              th.table3-item.table3-top= lorem.word
+              th.table3-item.table3-top= lorem.word
+              th.table3-item.table3-top= lorem.word
+              th.table3-item.table3-top= lorem.word
+            tr.table3-td
+              td.table3-item.table3-middle= lorem.word
+              td.table3-item.table3-middle= lorem.word
+              td.table3-item.table3-middle= lorem.word
+              td.table3-item.table3-middle= lorem.word
+            tr.table3-td
+              td.table3-item.table3-middle= lorem.word
+              td.table3-item.table3-middle= lorem.word
+              td.table3-item.table3-middle= lorem.word
+              td.table3-item.table3-middle= lorem.word
+            tr.table3-td
+              td.table3-item.table3-bottom= lorem.word
+              td.table3-item.table3-bottom= lorem.word
+              td.table3-item.table3-bottom= lorem.word
+              td.table3-item.table3-bottom
+
+      == partial(:code, :locals => {data: data.table.css3})
+
+    li.snippet-li
+      .snippet-view
+        table.table4
+          tbody
+            tr
+              th.table4-item.table4-top= lorem.word
+              th.table4-item.table4-top= lorem.word
+              th.table4-item.table4-top= lorem.word
+              th.table4-item.table4-top= lorem.word
+            tr
+              td.table4-item.table4-middle= lorem.word
+              td.table4-item.table4-middle= lorem.word
+              td.table4-item.table4-middle= lorem.word
+              td.table4-item.table4-middle= lorem.word
+            tr
+              td.table4-item.table4-middle= lorem.word
+              td.table4-item.table4-middle= lorem.word
+              td.table4-item.table4-middle= lorem.word
+              td.table4-item.table4-middle= lorem.word
+            tr
+              td.table4-item.table4-bottom= lorem.word
+              td.table4-item.table4-bottom= lorem.word
+              td.table4-item.table4-bottom= lorem.word
+              td.table4-item.table4-bottom= lorem.word
+
+      == partial(:code, :locals => {data: data.table.css4})
+
+    li.snippet-li
+      .snippet-view
+        table.table5
+          tbody
+            tr.table5-th
+              th.table5-top= lorem.word
+              th.table5-top= lorem.word
+              th.table5-top= lorem.word
+              th.table5-top= lorem.word
+            tr
+              td.table5-item.table5-td= lorem.word
+              td.table5-item.table5-td= lorem.word
+              td.table5-item.table5-td= lorem.word
+              td.table5-item.table5-td= lorem.word
+            tr
+              td.table5-item= lorem.word
+              td.table5-item= lorem.word
+              td.table5-item= lorem.word
+              td.table5-item= lorem.word
+            tr
+              td.table5-item= lorem.word
+              td.table5-item= lorem.word
+              td.table5-item= lorem.word
+              td.table5-item= lorem.word
+
+      == partial(:code, :locals => {data: data.table.css5})
+
+
+    li.snippet-li
+      .snippet-view
+        table.table6
+          tbody
+            tr
+              th.table6-item.table6-th= lorem.word
+              th.table6-item.table6-th= lorem.word
+              th.table6-item.table6-th= lorem.word
+              th.table6-item.table6-th= lorem.word
+            tr
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+            tr
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+            tr
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+              td.table6-item= lorem.word
+
+      == partial(:code, :locals => {data: data.table.css6})
+
+    li.snippet-li
+      .snippet-view.snippet7
+        table.table7.icon-table
+          tbody.table7-tbody
+            tr
+              th.table7-item= lorem.word
+              th.table7-item= lorem.word
+              th.table7-item= lorem.word
+              th.table7-item= lorem.word
+            tr
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+            tr
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+            tr
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+              td.table7-item= lorem.word
+
+      == partial(:code, :locals => {data: data.table.css7})
+
+    li.snippet-li
+      .snippet-view.snippet8
+        table.table8.icon-table
+          tbody.table8-tbody
+            tr.table8-trh
+              th.table8-item= lorem.word
+              th.table8-item= lorem.word
+              th.table8-item= lorem.word
+              th.table8-item= lorem.word
+            tr
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+            tr
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+            tr
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+              td.table8-item= lorem.word
+
+      == partial(:code, :locals => {data: data.table.css8})

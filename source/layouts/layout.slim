@@ -1,0 +1,34 @@
+doctype 5
+html.init lang="ja" ng-app="sasuli"
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta content="#{data.meta.title},#{current_page.data.preword ? current_page.data.preword + 'CSS' : 'CSSスニペット'},Webデザイン,totora0155" name="keywords"
+    meta content="#{data.meta.description}" name="description"
+    meta content="#{data.meta.author}" name="author"
+    title= current_page.data.title || "Sasuli"
+    link href="#{data.meta.url}" rel="canonical"
+    link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'
+    link href="/css/style.css" rel="stylesheet"
+    - if current_page.data.cssfile
+      link href="/css/#{current_page.data.cssfile}.css" rel="stylesheet"
+    link href="/favicon.ico" rel="shortcut icon"
+    script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"
+    script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"
+    /! script src="/js/ng-clip.min.js"
+    /! script src="/js/ZeroClipboard.min.js"
+    script src="/js/main.js"
+
+
+  body.layer ng-controller="#{current_page.data.top ? 'TopCtrl' : 'PageCtrl'}"
+    /![if lte IE 9]
+      <div class="no-ie">お使いのブラウザのバージョンはサポート外です。<a href="http://www.google.com/chromeframe?hl=ja&amp;prefersystemlevel=true">Chrome Frame</a>をダウンロード又は、<a href="http://browsehappy.com/">コチラ</a>にあるような最新のブラウザを使用してください。</div>
+
+    /! header
+    == partial(:header, :locals => {full_path: current_path})
+
+
+    /! content
+    .wrap-content
+      == yield
+

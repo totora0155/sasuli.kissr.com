@@ -1,0 +1,30 @@
+css1: |
+  input[type="text"] {
+    background: #fff;
+    height: 1.3em;
+    width: 55%;
+    text-indent: .75em;
+    border: 1px solid #888;
+    border-radius: 12px;
+    outline: none;
+  }
+
+  input[type="text"]:focus {
+    border-color: #ccc;
+  }
+
+  input[type="submit"] {
+    background: #888 url(https://db.tt/wyG9W3G6) 3px no-repeat;
+    height: 1.3em;
+    width: 1.3em;
+    text-indent: 1.3em;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    margin-left: .5em;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #aaa;
+  }
+
